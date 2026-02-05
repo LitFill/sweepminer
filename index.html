@@ -21,10 +21,24 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Sweeper Mine</h1>
-    <div id="game">
+    <h1>MineSweeper</h1>
+    <div id="controls">
+      <button id="resetBtn">Reset Game</button>
+      <span id="gameStatus">Playing</span>
+    </div>
+    <div id="stats">
+      <div class="stat-item">
+        <div class="stat-label">Bombs Left</div>
+        <div class="stat-value" id="bombsLeft">20</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Cells Left</div>
+        <div class="stat-value" id="cellsLeft">44</div>
+      </div>
+    </div>
+    <div id="game-container">
       <canvas id="gameCanvas"></canvas>
     </div>
-    <script src="index.js" defer></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
